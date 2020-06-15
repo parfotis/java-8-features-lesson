@@ -1,9 +1,6 @@
 package model;
 
-import java.math.BigDecimal;
 import java.time.LocalDateTime;
-import java.time.ZonedDateTime;
-import java.util.Date;
 
 public class Transaction {
     private LocalDateTime date;
