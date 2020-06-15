@@ -7,14 +7,14 @@ import java.util.Date;
 
 public class Transaction {
     private LocalDateTime date;
-    private BigDecimal amount;
+    private long amount;
     private String emailAddress;
 
-    public BigDecimal getAmount() {
+    public long getAmount() {
         return amount;
     }
 
-    public void setAmount(BigDecimal amount) {
+    public void setAmount(long amount) {
         this.amount = amount;
     }
 
