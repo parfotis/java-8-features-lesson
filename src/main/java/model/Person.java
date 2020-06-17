@@ -1,10 +1,14 @@
 package model;
 
+import java.util.Collections;
+import java.util.Set;
+
 public class Person {
     private String name;
     private int age;
     private Sex gender;
     private String emailAddress;
+    private Set<String> roles = Collections.emptySet();
 
     public String getName() {
         return name;
@@ -36,6 +40,14 @@ public class Person {
 
     public void setEmailAddress(String emailAddress) {
         this.emailAddress = emailAddress;
+    }
+
+    public Set<String> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(Set<String> roles) {
+        this.roles = roles;
     }
 
     public enum Sex {

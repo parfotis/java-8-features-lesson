@@ -1,5 +1,8 @@
 import model.Person;
 
+import java.util.Optional;
+
 public interface PersonsService {
-    Person getPersonByEmailAddress(String email);
+    Optional<Person> getPersonByEmailAddress(String email);
+
 }
