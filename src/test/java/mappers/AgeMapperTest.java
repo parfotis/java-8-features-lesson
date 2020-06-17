@@ -1,3 +1,5 @@
+package mappers;
+
 import model.Person;
 import org.junit.Test;
 
