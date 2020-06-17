@@ -13,10 +13,10 @@ import java.util.concurrent.Future;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
-public class TransactionServiceTest {
+public class AsyncTransactionServiceTest {
 
     private TransactionRepository transactionRepository = mock(TransactionRepository.class);
-    private final TransactionService transactionService = new TransactionService(transactionRepository);
+    private final AsyncTransactionService transactionService = new AsyncTransactionService(transactionRepository);
 
     @Test
     public void shouldGetTransactionsAsychronously() throws ExecutionException, InterruptedException {

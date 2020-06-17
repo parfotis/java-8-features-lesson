@@ -9,11 +9,11 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.Future;
 import java.util.stream.Collectors;
 
-public class TransactionService {
+public class AsyncTransactionService {
 
     private final TransactionRepository transactionRepository;
 
-    public TransactionService(TransactionRepository transactionRepository) {
+    public AsyncTransactionService(TransactionRepository transactionRepository) {
         this.transactionRepository = transactionRepository;
     }
 
